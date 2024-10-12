@@ -1,5 +1,6 @@
 import { createRef, MouseEventHandler } from "react";
 import styled from "styled-components";
+import popcornImg from "../images/single-popcorn.png";
 import { mq } from "../utils/media-query";
 
 const ANIMATION_LENGTH = 3
@@ -74,7 +75,7 @@ const Container = styled.div`
     height:20px;
     position:absolute;
     top:-50px;
-    background: url(https://contentservice.mc.reyrey.net/image_v1.0.0/?id=c1627fe5-a7e7-5fb7-af61-374c65707e3c&637384707423276230);
+    background: url(${popcornImg.src});
     background-size: 100% 100%;
     filter:drop-shadow(0px 0px 5px rgba(0,0,0,.25));
     pointer-events: none;

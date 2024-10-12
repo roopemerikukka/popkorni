@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import image from "./images/img1.jpeg";
 import StyledComponentsRegistry from "./lib/registry";
 
 const geistSans = localFont({
@@ -18,6 +19,16 @@ const bebasNeue = localFont({
 export const metadata: Metadata = {
   title: "Lauluyhtye Popkorni",
   description: "Lauluyhtye Popkorni on vuonna 2020 kuorolaisten itsensä perustama kupliva popkuoro suoraan Helsingin Pasilasta.",
+  openGraph: {
+    type: "website",
+    url: "https://lauluyhtyepopkorni.fi",
+    images: [
+      {
+        // @TODO maybe change this?
+        url: image.src
+      }
+    ]
+  }
 };
 
 export default function RootLayout({

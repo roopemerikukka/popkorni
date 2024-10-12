@@ -43,7 +43,14 @@ const FooterElement = styled.footer`
 
   a {
     font-family: var(--font-bebas-neue);
-    color: black;
+    color: var(--foreground);
     font-size: 1.5rem;
+    text-decoration: none;
+    transition: all 200ms ease-in-out;
+
+    &:hover {
+      text-decoration: underline;
+      filter: brightness(0.85);
+    }
   }
 `

@@ -2,6 +2,7 @@ import Image from "next/image";
 import styled from "styled-components";
 import image from "../images/img2.jpeg";
 import { mq } from "../utils/media-query";
+import PopcornBucket from "./PopcornBucket";
 
 const Intro = () => {
 
@@ -12,9 +13,10 @@ const Intro = () => {
         <p>Lauluyhtye Popkorni on vuonna 2020 kuorolaisten itsensä perustama kupliva popkuoro suoraan Helsingin Pasilasta. Popkornin soundia ja suuntaa valmentaa laulupedagogi Anni Järviö.</p>
         <p>Popkorni luottaa vahvaan naisenergiaan toiminnassaan, esiintymisessään sekä ohjelmistovalinnoissaan.</p>
         <p>Ohjelmisto koostuu hittibiiseistä joiden tahtiin Lauluyhtye Popkornilla lentää paukkumaissit kattilaan ja tunnelma läpi kattojen!</p>
+        <PopcornBucket />
       </TextWrap>
       <ImageWrap>
-        <Image src={image.src} width={image.width} height={image.height} alt="Lauluyhtye Popkorni" />
+        <Image src={image.src} width={image.width / 4} height={image.height / 4} alt="Lauluyhtye Popkorni" />
       </ImageWrap>
     </Container>
   )

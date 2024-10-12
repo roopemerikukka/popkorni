@@ -55,7 +55,7 @@ const PopcornBucket = () => {
 
   return (
     <Container ref={containerRef}>
-      <Bucket onClick={handleClick} ref={buttonRef} type="button">🍿</Bucket>
+      <Bucket onClick={handleClick} ref={buttonRef}>🍿</Bucket>
     </Container>
   )
 }
@@ -94,12 +94,10 @@ const Container = styled.div`
   }
 `
 
-const Bucket = styled.button`
+const Bucket = styled.span`
   margin: 24px;
   cursor: pointer;
   transition: cubic-bezier(0, 2.28, 0.95, 0.69) 0.5s;
   font-size: 4rem;
-  appearance: none;
-  background-color: transparent;
-  border: 0;
+  user-select: none;
 `

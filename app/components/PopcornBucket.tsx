@@ -100,4 +100,5 @@ const Bucket = styled.span`
   transition: cubic-bezier(0, 2.28, 0.95, 0.69) 0.5s;
   font-size: 4rem;
   user-select: none;
+  -webkit-tap-highlight-color: transparent;
 `

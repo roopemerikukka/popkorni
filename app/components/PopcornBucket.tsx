@@ -1,5 +1,6 @@
 import { createRef, MouseEventHandler } from "react";
 import styled from "styled-components";
+import { mq } from "../utils/media-query";
 
 const ANIMATION_LENGTH = 3
 
@@ -98,7 +99,11 @@ const Bucket = styled.span`
   margin: 24px;
   cursor: pointer;
   transition: cubic-bezier(0, 2.28, 0.95, 0.69) 0.5s;
-  font-size: 4rem;
+  font-size: 3rem;
   user-select: none;
   -webkit-tap-highlight-color: transparent;
+
+  @media ${mq.m} {
+    font-size: 4rem;
+  }
 `

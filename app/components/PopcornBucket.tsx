@@ -4,11 +4,13 @@ import popcornImg from "../images/single-popcorn.png";
 import { mq } from "../utils/media-query";
 
 const ANIMATION_LENGTH = 3
+let COUNTER = 1
 
-const createPopcorn = (container: HTMLDivElement | null, num = 1, xpos = 500, ypos = 200) => {
+const createPopcorn = (container: HTMLDivElement | null, xpos = 500, ypos = 200) => {
   if (!container) return;
   const p = document.createElement('div')
-  const even = num % 2 === 0;
+  const even = COUNTER % 2 === 0;
+  COUNTER++;
   p.className = 'popcorn'
   const scale = (Math.random() * 20) + 20
   p.style.width = scale + 'px'
@@ -41,17 +43,17 @@ const PopcornBucket = () => {
   const buttonRef = createRef<HTMLButtonElement>();
 
   const handleClick: MouseEventHandler<HTMLButtonElement> = (event) => {
-
-    if (buttonRef.current) {
-      createPopcorn(containerRef.current, event.detail, buttonRef.current.offsetLeft, buttonRef.current.offsetTop);
-      buttonRef.current.style.transform = "scale(1.2)";
-      setTimeout(() => {
-        if (buttonRef.current) {
-          buttonRef.current.style.transform = "scale(1)";
-        }
-      }, 100)
+    if (event.detail > 2) {
+      if (buttonRef.current) {
+        createPopcorn(containerRef.current, buttonRef.current.offsetLeft, buttonRef.current.offsetTop);
+        buttonRef.current.style.transform = "scale(1.2)";
+        setTimeout(() => {
+          if (buttonRef.current) {
+            buttonRef.current.style.transform = "scale(1)";
+          }
+        }, 100)
+      }
     }
-
   }
 
 

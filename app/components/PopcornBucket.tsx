@@ -43,16 +43,16 @@ const PopcornBucket = () => {
   const buttonRef = createRef<HTMLButtonElement>();
 
   const handleClick: MouseEventHandler<HTMLButtonElement> = (event) => {
-    if (event.detail > 2) {
-      if (buttonRef.current) {
+    if (buttonRef.current) {
+      if (event.detail > 2) {
         createPopcorn(containerRef.current, buttonRef.current.offsetLeft, buttonRef.current.offsetTop);
-        buttonRef.current.style.transform = "scale(1.2)";
-        setTimeout(() => {
-          if (buttonRef.current) {
-            buttonRef.current.style.transform = "scale(1)";
-          }
-        }, 100)
       }
+      buttonRef.current.style.transform = "scale(1.2)";
+      setTimeout(() => {
+        if (buttonRef.current) {
+          buttonRef.current.style.transform = "scale(1)";
+        }
+      }, 100)
     }
   }
 

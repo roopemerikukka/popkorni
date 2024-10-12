@@ -1,5 +1,5 @@
 :root {
-  --background: #1f1f1f;
+  --background: #1b1b1b;
   --foreground: #ededed;
   --red: rgb(236, 34, 65); /* #ec2241 */
   --pink: rgb(220, 121, 240); /* #dc79f0 */
@@ -50,4 +50,8 @@ h4 {
 h5,
 h6 {
   font-size: 1.3rem;
+}
+
+a {
+  color: var(--red);
 }

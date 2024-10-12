@@ -40,9 +40,9 @@ const createPopcorn = (container: HTMLDivElement | null, xpos = 500, ypos = 200)
 
 const PopcornBucket = () => {
   const containerRef = createRef<HTMLDivElement>();
-  const buttonRef = createRef<HTMLButtonElement>();
+  const buttonRef = createRef<HTMLSpanElement>();
 
-  const handleClick: MouseEventHandler<HTMLButtonElement> = (event) => {
+  const handleClick: MouseEventHandler<HTMLSpanElement> = (event) => {
     if (buttonRef.current) {
       createPopcorn(containerRef.current, buttonRef.current.offsetLeft, buttonRef.current.offsetTop);
       buttonRef.current.style.transform = "scale(1.2)";

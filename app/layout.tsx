@@ -3,13 +3,13 @@ import localFont from "next/font/local";
 import "./globals.css";
 import StyledComponentsRegistry from "./lib/registry";
 
-export const geistSans = localFont({
+const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
   weight: "100 900",
 });
 
-export const bebasNeue = localFont({
+const bebasNeue = localFont({
   src: "./fonts/BebasNeue.woff2",
   variable: "--font-bebas-neue",
   weight: "400",

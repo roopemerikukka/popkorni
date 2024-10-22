@@ -13,7 +13,9 @@ import Samples from "./components/Samples";
 export default function Home() {
 
   useEffect(() => {
-    window.particlesJS.load('particles-js', '/particlesjs-config.json');
+    if (window) {
+      window.particlesJS.load('particles-js', '/particlesjs-config.json');
+    }
   }, [])
 
   return (

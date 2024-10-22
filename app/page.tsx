@@ -1,6 +1,5 @@
 'use client';
 
-import 'particles.js';
 import { useEffect } from 'react';
 import styled from "styled-components";
 import BackgroundStripe from "./components/BackgroundStripe";
@@ -9,6 +8,8 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Intro from "./components/Intro";
 import Samples from "./components/Samples";
+// eslint-disable-next-line @typescript-eslint/no-require-imports
+if (typeof window !== 'undefined') { require('particles.js') }
 
 export default function Home() {
 

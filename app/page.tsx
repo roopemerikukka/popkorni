@@ -14,9 +14,7 @@ if (typeof window !== 'undefined') { require('particles.js') }
 export default function Home() {
 
   useEffect(() => {
-    if (window) {
-      window.particlesJS.load('particles-js', '/particlesjs-config.json');
-    }
+    window.particlesJS.load('particles-js', '/particlesjs-config.json');
   }, [])
 
   return (

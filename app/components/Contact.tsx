@@ -6,9 +6,9 @@ const Contact = () => {
   return (
     <>
       <Heading headingLevel="h2">Tilaa meidät keikalle!</Heading>
-      <p>Tilaa laulua - saat ikimuistoisen elämyksen!</p>
+      <p>Tilaa laulua – saat ikimuistoisen elämyksen!</p>
       <p>Lauluyhtye Popkorni viihdyttää, yllättää, voimaannuttaa ja ilahduttaa eikä jätä yhtäkään juhlijaa kylmäksi.</p>
-      <p>Edessä synttärit, pikkujoulut, polttarit, tuparit, häät tai vaikkapa ero-juhlat?</p>
+      <p>Edessä synttärit, pikkujoulut, polttarit, tuparit, häät tai vaikkapa erojuhlat?</p>
       <p>Ota yhteyttä ja juonitaan juuri teille räätälöity kokonaisuus.</p>
       <LinkButton href="mailto:lauluyhtye.popkorni@gmail.com?subject=Tarjouspyyntö" target="_blank">Ota yhteyttä</LinkButton>
       <p>

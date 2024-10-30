@@ -10,7 +10,7 @@ const Intro = () => {
     <Container>
       <TextWrap>
         <p>Lauluyhtye Popkorni viihdyttää, yllättää, voimaannuttaa ja ilahduttaa.</p>
-        <p>Lauluyhtye Popkorni on vuonna 2020 kuorolaisten itsensä perustama kupliva popkuoro suoraan Helsingin Pasilasta. Popkornin soundia ja suuntaa valmentaa laulupedagogi Anni Järviö.</p>
+        <p>Lauluyhtye Popkorni on vuonna 2021 kuorolaisten itsensä perustama kupliva popkuoro suoraan Helsingin Pasilasta. Popkornin soundia ja suuntaa valmentaa laulupedagogi Anni Järviö.</p>
         <p>Popkorni luottaa vahvaan naisenergiaan toiminnassaan, esiintymisessään sekä ohjelmistovalinnoissaan.</p>
         <p>Ohjelmisto koostuu hittibiiseistä, joiden tahtiin Lauluyhtye Popkornilla lentää paukkumaissit kattilaan ja tunnelma läpi kattojen!</p>
         <PopcornBucket />

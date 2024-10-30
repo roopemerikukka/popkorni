@@ -18,7 +18,7 @@ const bebasNeue = localFont({
 
 export const metadata: Metadata = {
   title: "Lauluyhtye Popkorni",
-  description: "Lauluyhtye Popkorni on vuonna 2020 kuorolaisten itsensä perustama kupliva popkuoro suoraan Helsingin Pasilasta.",
+  description: "Lauluyhtye Popkorni on vuonna 2021 kuorolaisten itsensä perustama kupliva popkuoro suoraan Helsingin Pasilasta.",
   openGraph: {
     type: "website",
     url: "https://lauluyhtyepopkorni.fi",

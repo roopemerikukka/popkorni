@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import image from "./images/img1.jpeg";
+import image from "./images/some.png";
 import StyledComponentsRegistry from "./lib/registry";
 
 const geistSans = localFont({
@@ -24,7 +24,6 @@ export const metadata: Metadata = {
     url: "https://lauluyhtyepopkorni.fi",
     images: [
       {
-        // @TODO maybe change this?
         url: image.src
       }
     ]

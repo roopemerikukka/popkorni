@@ -17,7 +17,11 @@ const Samples = () => {
       </Figure>
       <Figure>
         <FigCaption>Syntisten pöytä / Cicciolina</FigCaption>
-        <Audio controls src="/audio/syntisten_poyta_cicciolina.mp3"></Audio>
+        <Audio controls src="/audio/syntisten_poyta.mp3"></Audio>
+      </Figure>
+      <Figure>
+        <FigCaption>Girls Just Want to Have Fun</FigCaption>
+        <Audio controls src="/audio/girls.mp3"></Audio>
       </Figure>
     </>
   )
